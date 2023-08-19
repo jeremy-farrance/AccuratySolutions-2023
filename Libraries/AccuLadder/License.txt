@@ -1,0 +1,3 @@
+<p>AccuLadder Libraries Extension for DNN</p>
+<p>Accuraty <a href="https://accuraty.com" target="_blank">https://accuraty.com</a></p>
+<p>Your License Here</p>

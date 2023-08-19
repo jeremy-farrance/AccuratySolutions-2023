@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dotnetnuke type="Package" version="6.0">
+  <packages>
+    <package name="Accuraty.Libraries.AccuLadder_Symbols" type="Library" version="01.00.00">
+      <friendlyName>AccuLadder Library Symbols</friendlyName>
+      <description><![CDATA[Helpers, tools, utilities, and shortcuts for DNN and 2sxc projects]]></description>
+      <owner>
+        <name>Jeremy Farrance</name>
+        <organization>Accuraty</organization>
+        <url><![CDATA[<a href="https://accuraty.com" target="_blank">https://accuraty.com</a>]]></url>
+        <email><![CDATA[<a href="mailto:support@accuraty.com" target="_blank">support@accuraty.com</a>]]></email>
+      </owner>
+      <license src="License.txt" />
+      <releaseNotes src="ReleaseNotes.txt" />
+      <azureCompatible>True</azureCompatible>
+      <dependencies>
+        <dependency type="managedPackage" version="1.0.0">Accuraty.Libraries.AccuLadder</dependency>
+      </dependencies>
+      <components>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath></basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
