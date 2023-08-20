@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <dotnetnuke type="Package" version="6.0">
   <packages>
-    <package name="Accuraty.Libraries.AccuLadder" type="Library" version="01.00.00">
+    <package name="Accuraty.Libraries.AccuLadder" type="Library" version="01.00.01">
       <friendlyName>AccuLadder Library</friendlyName>
-      <description>
-		<![CDATA[<p>Helpers, tools, utilities, and shortcuts for DNN and 2sxc projects</p>]]>
-	  </description>
+      <description><![CDATA[<p>Helpers, tools, utilities, and shortcuts for DNN and 2sxc projects</p>]]></description>
       <owner>
         <name>Jeremy Farrance</name>
         <organization>Accuraty</organization>
@@ -21,7 +19,8 @@
       <components>
         <component type="ResourceFile">
           <resourceFiles>
-            <basePath></basePath>
+            <basePath>
+            </basePath>
             <resourceFile>
               <name>Resources.zip</name>
             </resourceFile>
