@@ -1,7 +1,5 @@
-using System;
 using System.Text; // StringBuilder
 using System.Web; // IHtmlString
-using ToSic.Razor.Blade;
 
 namespace Accuraty.Libraries.AccuLadder
 {
@@ -16,7 +14,7 @@ namespace Accuraty.Libraries.AccuLadder
         /// Get whether we are in debug mode; used to toggle logging, etc.
         /// </summary>
         /// <returns>true/false</returns>
-        public bool GetIsDebug()
+        public bool GetDebug()
         {
             return _isDebug;
         }
@@ -25,7 +23,7 @@ namespace Accuraty.Libraries.AccuLadder
         /// Set whether we are in debug mode; used to toggle logging, etc.
         /// </summary>
         /// <param name="value">none</param>
-        public void SetIsDebug(bool value)
+        public void SetDebug(bool value)
         {
             _isDebug = value;
         }
@@ -35,11 +33,11 @@ namespace Accuraty.Libraries.AccuLadder
         // it would be nice to implement a timer in here (like the 2sxc one) using TimeSpans and such
 
         private readonly string _templateValue = "<span class=\"font-weight-bold\">{0}:</span> {1}";
-        private readonly string _templatePre = "<pre>CARDHELPER'S DEBUG LOG:\r\n{0}\r\n</pre>";
+        private readonly string _templatePre = DevHelperHelpers.HtmlDebugWrapper;
 
         public void Log(string msg)
         {
-            if (GetIsDebug())
+            if (GetDebug())
             {
                 sb.AppendLine(msg);
             }
@@ -47,7 +45,7 @@ namespace Accuraty.Libraries.AccuLadder
 
         public void Log(string name, string value)
         {
-            if (GetIsDebug())
+            if (GetDebug())
             {
                 string result = string.Format(_templateValue, name, value);
                 sb.AppendLine(result);
@@ -56,7 +54,7 @@ namespace Accuraty.Libraries.AccuLadder
 
         public void Log(string name, bool value)
         {
-            if (GetIsDebug())
+            if (GetDebug())
             {
                 Log(name, value.ToString());
             }
@@ -64,7 +62,7 @@ namespace Accuraty.Libraries.AccuLadder
 
         public void Log(string name, int value)
         {
-            if (GetIsDebug())
+            if (GetDebug())
             {
                 Log(name, value.ToString());
             }
@@ -78,13 +76,13 @@ namespace Accuraty.Libraries.AccuLadder
         /// <returns>An HTML preformatted string</returns>
         public IHtmlString GetLog(bool clearLog = false)
         {
-            HtmlString result = new HtmlString(sb.ToString());
+            HtmlString result = new HtmlString(string.Format(_templatePre, sb.ToString()));
             if (clearLog)
             {
                 sb.Clear();
             }
 
-            if (GetIsDebug() && sb.Length > 0)
+            if (GetDebug() && sb.Length > 0)
             {
                 return result;
             }
