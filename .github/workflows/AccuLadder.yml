@@ -7,29 +7,28 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
-    - name: Setup .NET (standard2)
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '3.1.x'  # Using .NET Core 3.1 as it includes .NET Standard 2.0
 
-    - name: Restore Dependencies
-      run: dotnet restore
+    - name: Setup MSBuild Path
+      uses: microsoft/setup-msbuild@v1.0.2
 
-    - name: Build
-      run: dotnet build --no-restore
+    - name: Restore NuGet Packages
+      run: msbuild /t:restore
+
+    - name: Build Solution
+      run: msbuild /p:Configuration=Release
+
 
     - name: Install DocFX
-      run: dotnet tool install --global docfx
+      run: choco install docfx -y
 
     - name: Generate Documentation
       run: |
-        export PATH="$PATH:/home/runner/.dotnet/tools"
         docfx ./docfx/docfx.json
 
 #    - name: Move Documentation to Subfolder
