@@ -1,3 +1,11 @@
+The Main Thing here so far is AccuLadder, Accuraty's DNN Common Library. Probably only useful to Accuraty projects?
+
+Unfinished intro: [Accuraty.Libraries.AccuLadder](https://github.com/jeremy-farrance/AccuratySolutions-2023/tree/main/Libraries/AccuLadder)
+
+
+
+### TODO - rework or replace below...
+
 Hello, fellow DNN'er!  
 
 This solution was built using the [Upendo DNN Generator](https://github.com/UpendoVentures/generator-upendodnn#readme).  Anything you need to know about using this tool can be found there.  
