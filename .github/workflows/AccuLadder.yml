@@ -1,0 +1,44 @@
+name: Build, Generate Documentation, and Deploy
+
+on:
+  push:
+    branches:
+      - main  # Assuming you want to run this workflow on pushes to main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Setup .NET (standard2)
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '3.1.x'  # Using .NET Core 3.1 as it includes .NET Standard 2.0
+
+    - name: Restore Dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build --no-restore
+
+    - name: Install DocFX
+      run: dotnet tool install --global docfx
+
+    - name: Generate Documentation
+      run: |
+        export PATH="$PATH:/home/runner/.dotnet/tools"
+        docfx ./docfx/docfx.json
+
+    - name: Move Documentation to Subfolder
+      run: |
+        mkdir -p ./_site/root/AccuLadder
+        cp -r ./_site/* ./_site/root/AccuLadder/
+        
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docfx/_site  # Adjust if your DocFX output directory is different
