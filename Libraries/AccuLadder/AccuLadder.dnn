@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <dotnetnuke type="Package" version="6.0">
   <packages>
-    <package name="Accuraty.Libraries.AccuLadder" type="Library" version="01.00.01">
+    <package name="Accuraty.Libraries.AccuLadder" type="Library" version="01.00.08">
       <friendlyName>AccuLadder Library</friendlyName>
-      <description><![CDATA[<p>Helpers, tools, utilities, and shortcuts for DNN and 2sxc projects</p>]]></description>
+      <description><![CDATA[<p>Helpers, tools, utilities, and shortcuts for DNN and 2SC projects</p>]]></description>
       <owner>
         <name>Jeremy Farrance</name>
         <organization>Accuraty</organization>
@@ -14,7 +14,7 @@
       <releaseNotes src="ReleaseNotes.txt" />
       <azureCompatible>True</azureCompatible>
       <dependencies>
-        <dependency type="CoreVersion">09.08.00</dependency>
+        <dependency type="CoreVersion">09.03.02</dependency>
       </dependencies>
       <components>
         <component type="ResourceFile">

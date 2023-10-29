@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("AccuLadder Libraries Extension for DNN")]
-[assembly: AssemblyDescription("Helpers, tools, utilities, and shortcuts for DNN and 2sxc projects")]
+[assembly: AssemblyDescription("Helpers, tools, utilities, and shortcuts for DNN and 2SC projects")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Accuraty")]
 [assembly: AssemblyProduct("AccuLadder Libraries Extension for DNN")]
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("01.00.01")]
-[assembly: AssemblyFileVersion("01.00.01")]
+[assembly: AssemblyVersion("01.00.08")]
+[assembly: AssemblyFileVersion("01.00.08")]
