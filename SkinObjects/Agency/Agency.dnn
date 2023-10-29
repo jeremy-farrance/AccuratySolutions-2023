@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dotnetnuke type="Package" version="6.0">
+  <packages>
+    <package name="Accuraty.SkinObjects.Agency" type="SkinObject" version="01.00.00">
+      <friendlyName>Agency</friendlyName>
+      <description>Output useful info about this DNN project for people who create DNN based website for their clients</description>
+      <iconFile>~/DesktopModules/Agency/Images/logo.png</iconFile>
+      <owner>
+        <name>Jeremy Farrance</name>
+        <organization>Accuraty</organization>
+        <url>https://accuraty.com</url>
+        <email>2@accuraty.com</email>
+      </owner>
+      <license src="License.txt" />
+      <releaseNotes src="ReleaseNotes.txt" />
+      <azureCompatible>True</azureCompatible>
+      <dependencies>
+        <dependency type="CoreVersion">09.08.00</dependency>
+      </dependencies>
+      <components>
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <name>Accuraty.SkinObjects.Agency.dll</name>
+              <version>01.00.00</version>
+            </assembly>
+          </assemblies>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules/Agency</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+        <component type="SkinObject">
+          <moduleControl>
+            <controlKey>View</controlKey>
+            <controlSrc>DesktopModules/Agency/View.ascx</controlSrc>
+            <supportsPartialRendering>False</supportsPartialRendering>
+          </moduleControl>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>

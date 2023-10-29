@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AccuLadder Libraries Extension for DNN")]
-[assembly: AssemblyDescription("Helpers, tools, utilities, and shortcuts for DNN and 2SC projects")]
+[assembly: AssemblyTitle("Agency SkinObjects Extension for DNN")]
+[assembly: AssemblyDescription("Output useful info about this DNN project for people who create DNN based website for their clients")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Accuraty")]
-[assembly: AssemblyProduct("AccuLadder Libraries Extension for DNN")]
+[assembly: AssemblyProduct("Agency SkinObjects Extension for DNN")]
 [assembly: AssemblyCopyright("Copyright 2023 Accuraty")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("5FDD7B56-9115-4D73-92E2-A5B0185AED8D")]
+[assembly: Guid("D7364F99-73F9-4DEC-B626-C469646BAA67")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("01.00.08")]
-[assembly: AssemblyFileVersion("01.00.08")]
+[assembly: AssemblyVersion("01.00.00")]
+[assembly: AssemblyFileVersion("01.00.00")]

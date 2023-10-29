@@ -1,8 +1,36 @@
 
 <h2>AccuLadder Libraries Extension for DNN</h2>
-<p>Version 01.00.00</p>
+
+<p>Version 01.00.08</p>
 <ul>
-	<li>First update</li>
-	<li>Second update</li>
-	<li>Another update</li>
+  <li>including 01.00.07.00 (.06 thru .07.02)</li>
+  <li>Completed all AccuKit.cshtml properties and methods and tested (CompatibilityHelper.cs)</li>
+  <li>Reorganized the project; folder structure and filenames</li>
+  <li>Enhanced logging with Accu.Dev.Log( name, DateTime )</li>
+  <li>Added WebHelpers for GetWidthFromImageFile() and Height</li>
+  <li>Added TextHelper for FormatPhone()</li>
+  <li>(unfinished) marking AccuKit as obsolete for IntelliSense and Docs</li>
+  <li>Added ThemeHelper and enhanced a bit further (than AccuTheme)</li>
+</ul>
+
+<p>Version 01.00.05</p>
+<ul>
+  <li>stubbed out .Dnn and .Sxc</li>
+  <li>TabInfo GetPageById</li>
+  <li>Split (partial) classes across files</li>
+</ul>
+
+<p>Version 01.00.04</p>
+<ul>
+  <li>Added various DNN helpers for IsAdminOrSuper(), etc.</li>
+  <li>More converting to Statics; now almost all static</li>
+  <li>Reorg structure; from DevHelper to Accu.Dev</li>
+</ul>
+
+<p>Version 01.00.03</p>
+<ul>
+  <li>Re-organizing project and classes</li>
+  <li>Experimental addition(s) from AccuKit11</li>
+  <li>Converting DevHelper to statics along with minor refactorings (unfinished)</li>
+  <li>Added REAMDE.md with outline to convert (all) from AccuKit, etc.</li>
 </ul>

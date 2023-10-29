@@ -1,20 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <dotnetnuke type="Package" version="6.0">
   <packages>
-    <package name="Accuraty.Libraries.AccuLadder" type="Library" version="01.00.08">
-      <friendlyName>AccuLadder Library</friendlyName>
-      <description><![CDATA[<p>Helpers, tools, utilities, and shortcuts for DNN and 2SC projects</p>]]></description>
+    <package name="Accuraty.SkinObjects.Agency_Symbols" type="Library" version="01.00.00">
+      <friendlyName>Agency Skin Object Symbols</friendlyName>
+      <description><![CDATA[Output useful info about this DNN project for people who create DNN based website for their clients]]></description>
+      <iconFile>~/DesktopModules/Agency/Images/logo.png</iconFile>
       <owner>
         <name>Jeremy Farrance</name>
         <organization>Accuraty</organization>
-        <url><![CDATA[<a href="https://accuraty.com" target="_blank">https://accuraty.com</a>]]></url>
-        <email><![CDATA[<a href="mailto:support@accuraty.com" target="_blank">support@accuraty.com</a>]]></email>
+        <url>https://accuraty.com</url>
+        <email>2@accuraty.com</email>
       </owner>
       <license src="License.txt" />
       <releaseNotes src="ReleaseNotes.txt" />
       <azureCompatible>True</azureCompatible>
       <dependencies>
-        <dependency type="CoreVersion">09.03.02</dependency>
+        <dependency type="managedPackage" version="1.0.0">Accuraty.SkinObjects.Agency</dependency>
       </dependencies>
       <components>
         <component type="ResourceFile">

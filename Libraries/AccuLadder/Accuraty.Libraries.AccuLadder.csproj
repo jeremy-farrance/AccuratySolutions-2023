@@ -58,6 +58,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.IdentityModel" />
     <Reference Include="System.IdentityModel.Services" />
     <Reference Include="System.Net.Http" />
@@ -72,13 +73,18 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="ToSic.Razor">
-      <HintPath>..\..\..\dnn\dnn91200\Website\bin\ToSic.Razor.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DevHelper.cs" />
+    <Compile Include="Accu\Accu.cs" />
+    <Compile Include="Accu\TextHelper.cs" />
+    <Compile Include="Accu\NxHelper.cs" />
+    <Compile Include="Accu\WebHelper.cs" />
+    <Compile Include="Accu\_CompatibilityHelper.cs" />
+    <Compile Include="Accu\SxcHelper.cs" />
+    <Compile Include="Accu\DnnHelper.cs" />
+    <Compile Include="Accu\DevHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Accu\ThemeHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Library.build" />
@@ -87,7 +93,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="NuGet.config" />
+    <None Include="..\..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="packages.config" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <None Include="AccuLadder.dnn" />
