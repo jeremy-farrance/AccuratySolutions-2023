@@ -15,7 +15,7 @@ jobs:
 
 
     - name: Setup MSBuild Path
-      uses: microsoft/setup-msbuild@v1.0.2
+      uses: microsoft/setup-msbuild@vlatest
 
     - name: Restore NuGet Packages
       run: msbuild /t:restore
