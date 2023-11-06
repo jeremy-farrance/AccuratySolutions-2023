@@ -8,6 +8,8 @@ Then, browse to http://localhost:8080/
 
 TODO: Add a script to do this automatically and public to GitHub Pages
 
+[Current Documentation (WIP v1.0.8)](https://jeremy-farrance.github.io/AccuLadder/api/Accuraty.Libraries.AccuLadder.html)
+
 ## Helpers - Draft and Changing Outline as we convert...
 
 This is a collection of helper classes and methods that we use at Accuraty. It is a work in progress. 
