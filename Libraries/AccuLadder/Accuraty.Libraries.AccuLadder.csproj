@@ -76,6 +76,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Accu\Accu.cs" />
+    <Compile Include="Accu\IconHelper.cs" />
+    <Compile Include="Accu\DnnHelpers.cs" />
     <Compile Include="Accu\TextHelper.cs" />
     <Compile Include="Accu\NxHelper.cs" />
     <Compile Include="Accu\WebHelper.cs" />

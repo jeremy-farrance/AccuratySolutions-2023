@@ -13,4 +13,14 @@ namespace Accuraty.Libraries.AccuLadder
       get => Assembly.GetExecutingAssembly().GetName().Version.ToString();
     }
   }
+
+  /// <summary>Defines common constants for the user manager.</summary>
+  public class Constants
+  {
+    /// <summary>The default Icon Set the IconHelper.Get() uses for this module; see https://www.w3schools.com/icons/default.asp</summary>
+    public const string DefaultIconSet = "Google";
+
+    /// <summary>The default Icon Color the IconHelper.Get() uses for this module; see https://www.w3schools.com/icons/default.asp</summary>
+    public const string DefaultIconColor = "none"; // "none" is handled in the IconHelper.Get() method
+  }
 }

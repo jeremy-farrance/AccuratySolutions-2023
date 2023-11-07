@@ -16,7 +16,7 @@ namespace Accuraty.Libraries.AccuLadder
     /// <summary>
     /// Accu.Dnn Helper - Tools, utilities, and shortcuts for DNN-specific things
     /// </summary>
-    public class Dnn
+    public partial class Dnn
     {
       /// <summary>
       /// Current page is Home?
