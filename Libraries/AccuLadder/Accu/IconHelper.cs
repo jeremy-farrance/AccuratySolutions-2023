@@ -13,7 +13,7 @@ namespace Accuraty.Libraries.AccuLadder
   public partial class Accu
   {
     /// <summary>
-    /// Accu.Dnn Helper - Tools, utilities, and shortcuts for DNN-specific things
+    /// Accu.Icon Helper - Simple syntax to an Icon on the page
     /// </summary>
     public partial class Icon
     {

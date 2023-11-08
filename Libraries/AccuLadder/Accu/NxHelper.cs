@@ -9,7 +9,7 @@ namespace Accuraty.Libraries.AccuLadder
   {
 
     /// <summary>
-    /// Accu.Nx Helper - Experimental Tools, utilities, and shortcuts for 2sxc-specific things
+    /// Accu.Nx Helper - Experimental Tools, utilities, and shortcuts for DNN or 2sxc things
     /// </summary>
     public class Nx
     {

@@ -46,13 +46,19 @@
         ]
       }
     ],
-    "output": "_site",
+    "output": "../../gh.io/jeremy-farrance/AccuLadder",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "default",
-      "modern"
+      "templates/default",
+      "templates/modern"
     ],
+    "globalMetadata": {
+      // Other metadata...
+      "_appTitle": " Open Source by Accuraty Solutions",
+      "_appFooter": "Note: a clear blue sky is just the surface of the ocean of the universe.",
+      "_appLogoPath": "images/accu-logo.svg"
+    },
     "postProcessors": [],
     "keepFileLink": false,
     "disableGitFeatures": false

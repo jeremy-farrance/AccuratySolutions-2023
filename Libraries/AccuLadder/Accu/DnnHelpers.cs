@@ -14,9 +14,8 @@ namespace Accuraty.Libraries.AccuLadder
   /// </summary>
   public partial class Accu
   {
-    /// <summary>
-    /// Accu.Dnn Helper - Tools, utilities, and shortcuts for DNN-specific things
-    /// </summary>
+
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
     public partial class Dnn
     {
       /// <summary>
