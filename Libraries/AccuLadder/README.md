@@ -1,12 +1,24 @@
 # AccuLadder
 
-## How to Generate the Docs
+## How to Generate the Docs (DocFX)
 
-On REMOTE101, PowerShell or command line to C:\dev\gen\
-Then, run the following command: `docfx .\docfx\docfx.json --serve`
+PowerShell or command line to C:\dev\gen\docfx
+Then, run the following command: `docfx build docfx.json [--serve]`
 Then, browse to http://localhost:8080/
 
-TODO: Add a script to do this automatically and public to GitHub Pages
+It builds into `C:\dev\gh.io\jeremy-farrance\AccuLadder` which is git remote for 
+https://github.com/jeremy-farrance/jeremy-farrance.github.io
+
+To publish, open the VS Code project and publish main directly to the remote repo.
+
+Key files:
+- docfx.json
+- templates/modern/
+  - layout/_master.tmpl
+  - public/main.css 
+  - others?
+ 
+TODO: Automate all the above on Release builds
 
 ## Helpers - Draft and Changing Outline as we convert...
 

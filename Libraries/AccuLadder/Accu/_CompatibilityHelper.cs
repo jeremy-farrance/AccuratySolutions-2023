@@ -27,8 +27,8 @@ namespace Accuraty.Libraries.AccuLadder
     public static HtmlString BootstrapIcon(string iconName) { return Accu.Theme.BootstrapIcon(iconName); }
     [Obsolete("Deprecated, instead use: Accu.Dnn.IsSuper()")]
     public static bool isSuperUser() { return Accu.Dnn.IsSuper(); }
-    [Obsolete("Deprecated, instead use: Accu.Dev.ToSlug(phrase)")]
-    public static string ToSlug(string phrase) { return Accu.Dev.ToSlug(phrase); }
+    [Obsolete("Deprecated, instead use: Accu.Web.ToSlug(phrase)")]
+    public static string ToSlug(string phrase) { return Accu.Web.ToSlug(phrase); }
     /// <summary>Obsolete: Deprecated, use: Accu.Dev.GetIpAddress() instead</summary>
     [Obsolete("Deprecated, instead use: Accu.Dev.IsAccuratyIp()")]
     public static bool isAccuratyIP() { return Accu.Dev.IsAccuratyIp(); }

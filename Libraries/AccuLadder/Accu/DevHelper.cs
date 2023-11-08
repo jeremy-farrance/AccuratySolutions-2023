@@ -15,7 +15,7 @@ namespace Accuraty.Libraries.AccuLadder
   public partial class Accu
   {
     /// <summary>
-    /// Accu.Dev Helper - Tools, utilities, and shortcuts for DNN and 2SC projects
+    /// Accu.Dev Helper - Tools, utilities, and shortcuts to assist with developing stuff inside DNN and 2SC projects
     /// </summary>
     public class Dev
     {
@@ -140,29 +140,6 @@ namespace Accuraty.Libraries.AccuLadder
       }
 
       /// <summary>
-      /// Turn any text or title in to a URL Slug
-      /// </summary>
-      /// <param name="phrase">Any string to be converted to a Slug</param>
-      /// <remarks>Source: https://stackoverflow.com/questions/2920744/url-slugify-algorithm-in-c</remarks>
-      /// <remarks>TODO find better version that does more (with hyphens; multiples and trailing)</remarks>
-      public static string ToSlug(string phrase)
-      {
-        byte[] bytes = Encoding.GetEncoding("Cyrillic").GetBytes(phrase);
-        string str = Encoding.ASCII.GetString(bytes);
-        str = str.ToLower();
-        // invalid chars
-        str = Regex.Replace(str, @"[^a-z0-9\s-]", "");
-        // convert multiple spaces into one space
-        str = Regex.Replace(str, @"\s+", " ").Trim();
-        // cut and trim
-        str = str.Substring(0, str.Length <= 45 ? str.Length : 45).Trim();
-        str = Regex.Replace(str, @"\s", "-"); // space to hyphen
-        str = Regex.Replace(str, @"-{2,}", "-"); // multiple hyphens to one hyphen
-        str = str.Trim('-'); // trim hyphens from ends
-        return str;
-      }
-      
-      /// <summary>
       /// Get the version of an installed DLL in /bin
       /// </summary>
       /// <remarks>Example: expecting "ToSic.Razor" and we assume its in /bin and ends in .dll</remarks>
@@ -241,8 +218,12 @@ namespace Accuraty.Libraries.AccuLadder
         }
         return ip;
       }
-    }
 
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
+      [Obsolete("Deprecated, instead use: Accu.Web.ToSlug(phrase)")]
+      public static string ToSlug(string phrase) { return Accu.Web.ToSlug(phrase); }
+
+    }
 
   } // class Accu
 } // end of namespace Accuraty.Libraries.AccuLadder
