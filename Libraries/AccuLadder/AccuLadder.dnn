@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <dotnetnuke type="Package" version="6.0">
   <packages>
-    <package name="Accuraty.Libraries.AccuLadder" type="Library" version="01.00.09">
+    <package name="Accuraty.Libraries.AccuLadder" type="Library" version="1001.01.00">
       <friendlyName>AccuLadder Library</friendlyName>
       <description><![CDATA[<p>Helpers, tools, utilities, and shortcuts for DNN and 2SC projects</p>]]></description>
       <owner>

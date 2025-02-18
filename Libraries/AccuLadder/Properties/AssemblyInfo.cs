@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Accuraty")]
 [assembly: AssemblyProduct("AccuLadder Libraries Extension for DNN")]
-[assembly: AssemblyCopyright("Copyright 2023 Accuraty")]
+[assembly: AssemblyCopyright("Copyright 2022-2025 Accuraty")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("01.00.09")]
-[assembly: AssemblyFileVersion("01.00.09")]
+[assembly: AssemblyVersion("1001.01.00")]
+[assembly: AssemblyFileVersion("1001.01.00")]

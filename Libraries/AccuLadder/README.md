@@ -2,6 +2,8 @@
 
 ## How to Generate the Docs (DocFX)
 
+If DocFX is not installed, install it using dotnet: `dotnet tool install -g docfx`
+
 PowerShell or command line to C:\dev\gen\docfx
 Then, run the following command: `docfx build docfx.json [--serve]`
 Then, browse to http://localhost:8080/

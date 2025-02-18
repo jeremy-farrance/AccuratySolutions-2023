@@ -8,6 +8,7 @@ using System.Web;
 namespace Accuraty.Libraries.AccuLadder
 {
   [Obsolete("AccuKit is Deprecated, use only for quick compatibility hacks. ")]
+#pragma warning disable CS1591 // Missing XML comment for publicly visible type or member
   public class AccuKit
   {
     /// <summary>Obsolete: Deprecated, use: Accu.Theme.Path instead</summary>
@@ -48,5 +49,6 @@ namespace Accuraty.Libraries.AccuLadder
     public static string sbe(string returnTrue = "dev", string returnFalse = "") { return Accu.Nx.Sbe(returnTrue, returnFalse); }
 
   } // end class AccuKit
+#pragma warning restore CS1591 // Missing XML comment for publicly visible type or member
 } // end namespace Accuraty.Libraries.AccuLadder
 
