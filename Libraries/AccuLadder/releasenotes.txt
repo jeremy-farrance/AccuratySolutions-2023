@@ -1,7 +1,23 @@
 
 <h2>AccuLadder Libraries Extension for DNN</h2>
 
-<p>Version 01.00.09</p>
+<h3>Version 1000.01.00 - Stable</h3>
+<ul>
+  <li>Version Numbering Changed to <a href="https://antfu.me/posts/epoch-semver" target="_blank">Epoch Semantic Versioning</a>, e.g. this would have been v01.01.00</li>
+  <li>Testing...</li>
+</ul>
+
+<hr>
+
+<p>Version 01.00.10 - 2024-12-26+</p>
+<ul>
+  <li>Improved DocFX instructions (install using dotnet)</li>
+  <li>Updated PolySharp to 1.15 and added C# Language Version in .csproj</li>
+  <li>Cleaned up all CS1591 warnings on Missing XML comments</li>
+  <li>Updated DNN NuGet packages from 9.8 to 9.11</li>
+</ul>
+
+<p>Version 01.00.09 - 2023-11-07?</p>
 <ul>
   <li>Add IconHelper; works, but needs think, renaming, refactoring</li>
   <li>Fixed .ToSlug; moved from Accu.Dev to Accu.Web</li>

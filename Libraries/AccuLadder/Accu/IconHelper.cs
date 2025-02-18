@@ -12,6 +12,10 @@ namespace Accuraty.Libraries.AccuLadder
   /// </summary>
   public partial class Accu
   {
+    // TODO implement Heroicons (https://heroicons.com/)
+    // TODO implement Ionicons (https://ionicons.com/)
+    // TODO implement FontAwesome (https://fontawesome.com/icons?d=gallery&p=2&m=free)
+
     /// <summary>
     /// Accu.Icon Helper - Simple syntax to an Icon on the page
     /// </summary>
@@ -39,8 +43,6 @@ namespace Accuraty.Libraries.AccuLadder
       {
         // TOOD implement iconStyle for Normal, Default, Solid, Outlined, Rounded, TwoTone, Sharp, or Round or whatever they think up next; string iconStyle = "normal"
         // TODO implement modern Bootstrap Icons (https://icons.getbootstrap.com/) (standalone since Aug 2020)
-        // TODO implement Heroicons (https://heroicons.com/)
-        // TODO implement FontAwesome (https://fontawesome.com/icons?d=gallery&p=2&m=free)
         // TODO implement inverse/contrast color; bool invertColor = false (find that cool color/contrast inversion code from ???)
         // TODO how would we implement it so that we only load the icon sets resources that are actually used/needed? See Views/Shared/_Layout.cshtml
         // TOOD support other icon sets/styles (e.g. Google Symbols or Bootstrap 5)? How would we resolve names between them? (e.g. "lock_outline" vs "lock")

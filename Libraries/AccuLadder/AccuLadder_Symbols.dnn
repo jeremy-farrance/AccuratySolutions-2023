@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <dotnetnuke type="Package" version="6.0">
   <packages>
-    <package name="Accuraty.Libraries.AccuLadder_Symbols" type="Library" version="01.00.09">
+    <package name="Accuraty.Libraries.AccuLadder_Symbols" type="Library" version="1001.01.00">
       <friendlyName>AccuLadder Library Symbols</friendlyName>
       <description><![CDATA[Helpers, tools, utilities, and shortcuts for DNN and 2SC projects]]></description>
       <owner>
@@ -14,7 +14,7 @@
       <releaseNotes src="ReleaseNotes.txt" />
       <azureCompatible>True</azureCompatible>
       <dependencies>
-        <dependency type="managedPackage" version="1.0.9">Accuraty.Libraries.AccuLadder</dependency>
+        <dependency type="managedPackage" version="1001.1.0">Accuraty.Libraries.AccuLadder</dependency>
       </dependencies>
       <components>
         <component type="ResourceFile">

@@ -15,7 +15,10 @@ this was expected, see JRF. More on this <mark>below</mark>.
 Install a newer version, its a normal DNN extension install, it will just upgrade the existing version.
 
 ## Alpha and Experimental
-This project is in alpha and experimental. Any release marked `Latest` is good for production use. It is not recommended for use in any project that is not under active development by a developer who is familiar with the code and is able to fix any issues that may arise.
+This project is at the "alpha and experimental" stage of development. However, for internal Accuraty use, 
+any release marked `Latest` is good for production use. It is not recommended for use in any project 
+that is not under active development by a developer (e.g. prolly only JRF) who is familiar with the 
+code and is able to immediately fix any issues that may arise.
 
 ## How to Use
 Once AccuLadder is installed, you can use it in your C# code like this

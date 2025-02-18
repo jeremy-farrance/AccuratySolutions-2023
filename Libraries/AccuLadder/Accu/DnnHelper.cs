@@ -27,6 +27,8 @@ namespace Accuraty.Libraries.AccuLadder
         return PortalSettings.Current.ActiveTab.TabID == PortalSettings.Current.HomeTabId;
       }
 
+      // TODO - the following two functions; we need the same for getting a UserInfo from a UserId
+
       /// <summary>
       /// Get a DNN TabInfo for a pageId
       /// </summary>

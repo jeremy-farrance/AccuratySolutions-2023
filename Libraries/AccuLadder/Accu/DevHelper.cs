@@ -78,7 +78,11 @@ namespace Accuraty.Libraries.AccuLadder
         }
       }
 
-      // same as above, but for other types
+      /// <summary>
+      /// same as above, but for other types
+      /// </summary>
+      /// <param name="name"></param>
+      /// <param name="value"></param>
       public static void Log(string name, int value)
       {
         if (_isDebug)
@@ -122,6 +126,12 @@ namespace Accuraty.Libraries.AccuLadder
         }
       }
 
+      /// <summary>
+      /// Combines multiple path segments into a single path string with the specified separator.
+      /// </summary>
+      /// <param name="pathSeparator">The separator to use between path segments.</param>
+      /// <param name="segments">The path segments to combine.</param>
+      /// <returns>A combined path string.</returns>
       public static string CombinePathSegments(string pathSeparator = "/", params string[] segments)
       {
         if (segments == null || segments.Length == 0)
@@ -180,6 +190,10 @@ namespace Accuraty.Libraries.AccuLadder
         return stringIpAddress;
       }
 
+      /// <summary>
+      /// Is the visitor's IP address an Accuraty IP?
+      /// </summary>
+      /// <returns>boolean true/false</returns>
       public static bool IsAccuratyIp()
       {
         var list = new List<string>
